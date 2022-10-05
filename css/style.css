@@ -199,6 +199,7 @@ h4{
 /****************************************main syles start*****************************************************/
 .main-content {
     height: 100%;
+    padding: 32px 0 112px;
 }
 .main-content__link-container {
     display: flex;
@@ -261,9 +262,14 @@ h4{
     line-height: 1.5;
 }
 .catalog-card__brand-name {
+    line-height: 1.5;
+    color: #5C5F60;
     margin-bottom: 4px;
 }
 .catalog-card__name {
+    font-weight: 400;
+    line-height: 1.5;
+    color: #2D3132;
     margin-bottom: 24px;
 }
 .catalog-card__wrap {
@@ -273,8 +279,15 @@ h4{
     align-items: center;
 }
 .catalog-card__price-block {}
-.catalog-card__old-price {}
-.catalog-card__current-price {}
+.catalog-card__old-price {
+    font-size: 12px;
+    text-decoration-line: line-through;
+    color: #747778;
+}
+.catalog-card__current-price {
+    font-weight: 500;
+    color: #2D3132;
+}
 .catalog-card__info-block {}
 .catalog-card__location-block {
     display: flex;
@@ -283,16 +296,26 @@ h4{
     align-items: center;
     margin-bottom: 4px;
 }
-.catalog-card__location-icon {}
-.catalog-card__location-city {}
+.catalog-card__location-icon {
+    margin-right: 4px;
+}
+.catalog-card__location-city {
+    font-family: 'Stolzl Book';
+    font-size: 12px;
+    color: #2D3132;
+}
 .catalog-card__company-block {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
 }
-.catalog-card__company-logo {}
-.catalog-card__company-name {}
+.catalog-card__company-logo {
+    margin-right: 8px;
+}
+.catalog-card__company-name {
+    color: #2D3132;
+}
 /****************************************main syles end*******************************************************/
 /****************************************footer syles start***************************************************/
 .main-footer {
