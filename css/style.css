@@ -196,6 +196,104 @@ h4{
     color: #444748;
 }
 /****************************************header syles end*****************************************************/
+/****************************************main syles start*****************************************************/
+.main-content {
+    height: 100%;
+}
+.main-content__link-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.main-content__link {}
+.main-content__headline {}
+.main-content__wrap{
+    display: flex;
+    flex-direction: row;
+}
+.filter-block {
+    width: 312px;
+}
+.catalog-block {
+    width: calc(100% - 312px);
+}
+.catalog-filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.catalog-filter__text {}
+.catalog-filter__select {}
+.catalog-content {}
+.catalog-card {
+    width: fit-content;
+    border: 1px solid #EFF1F1;
+    border-radius: 4px;
+    padding: 24px;
+}
+.catalog-card__headline-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.catalog-card__heart-icon {
+
+}
+.catalog-card__image-wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.catalog-card__image {}
+.catalog-card__badge {
+    font-size: 10px;
+    color: #00382F;
+    text-transform: uppercase;
+    background-color: #B4FFF0;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    padding: 4px 8px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.catalog-card__brand-name {
+    margin-bottom: 4px;
+}
+.catalog-card__name {
+    margin-bottom: 24px;
+}
+.catalog-card__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.catalog-card__price-block {}
+.catalog-card__old-price {}
+.catalog-card__current-price {}
+.catalog-card__info-block {}
+.catalog-card__location-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 4px;
+}
+.catalog-card__location-icon {}
+.catalog-card__location-city {}
+.catalog-card__company-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.catalog-card__company-logo {}
+.catalog-card__company-name {}
+/****************************************main syles end*******************************************************/
 /****************************************footer syles start***************************************************/
 .main-footer {
     background-color: #EFF1F1;
