@@ -213,11 +213,32 @@ h4{
     display: flex;
     flex-direction: row;
 }
+.main-content__filter-block{
+    margin-right: 24px;
+}
 .filter-block {
     width: 312px;
 }
+.filter-block__headline {
+    margin-bottom: 24px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #5C5F60;
+}
+.accordion {}
+.accordion-item {}
+.accordion-header {}
+.accordion-button {}
+.accordion-collapse {}
+.collapse {}
+.show {}
+.accordion-body {}
+.collapsed {}
 .catalog-block {
     width: calc(100% - 312px);
+}
+.catalog-block__catalog-filter{
+    margin-bottom: 24px;
 }
 .catalog-filter {
     display: flex;
@@ -227,9 +248,18 @@ h4{
 }
 .catalog-filter__text {}
 .catalog-filter__select {}
-.catalog-content {}
+.catalog-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.catalog-content__catalog-card{
+    margin-bottom: 24px;
+}
 .catalog-card {
-    width: fit-content;
+    min-width: 312px;
     border: 1px solid #EFF1F1;
     border-radius: 4px;
     padding: 24px;
@@ -240,28 +270,43 @@ h4{
     justify-content: flex-end;
     align-items: center;
 }
+.catalog-card__headline-wrap_organic{
+    justify-content: space-between;
+}
 .catalog-card__heart-icon {
-
+    cursor: pointer;
 }
 .catalog-card__image-wrap{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 284px;
+    margin-bottom: 16px;
 }
 .catalog-card__image {}
-.catalog-card__badge {
+.catalog-card__badge_top {
     font-size: 10px;
     color: #00382F;
     text-transform: uppercase;
     background-color: #B4FFF0;
     border-radius: 4px;
-    margin-bottom: 16px;
     padding: 4px 8px;
     font-weight: 400;
     line-height: 1.5;
+    align-self: flex-start;
+}
+.catalog-card__badge_organic{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.5;
+    color: #2D3132;
+    padding: 4px 8px;
+    background-color: #E0E3E3;
+    border-radius: 4px;
 }
 .catalog-card__brand-name {
+    text-transform: uppercase;
     line-height: 1.5;
     color: #5C5F60;
     margin-bottom: 4px;
