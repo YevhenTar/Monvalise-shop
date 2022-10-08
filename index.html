@@ -57,7 +57,7 @@
                     <nav class="main-header__menu">
                         <ul class="menu-list">
                             <li class="menu-list__item"><a href="#" class="menu-list__link">Головна</a></li>
-                            <li class="menu-list__item"><a href="#" class="menu-list__link">Каталог</a></li>
+                            <li class="menu-list__item"><a href="#" class="menu-list__link menu-list__link_active">Каталог</a></li>
                             <li class="menu-list__item"><a href="#" class="menu-list__link">Жінкам</a></li>
                             <li class="menu-list__item"><a href="#" class="menu-list__link">Чоловікам</a></li>
                             <li class="menu-list__item"><a href="#" class="menu-list__link">Дитячі речі</a></li>
@@ -105,7 +105,21 @@
                                     </h2>
                                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quos fugit rerum. Ab pariatur reprehenderit ut mollitia laboriosam officia fuga quis commodi, autem accusantium aliquam harum maiores perspiciatis cupiditate a.
+                                            <input class="accordion__price-range" type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+                                            <div class="price-box">
+                                                <div class="price-box__start-block">
+                                                    <p class="price-box__text">Від</p>
+                                                    <div class="price-box__wrap">
+                                                        <p class="start-price">980</p>
+                                                    </div>
+                                                </div>
+                                                <div class="price-box__end-block">
+                                                    <p class="price-box__text">До</p>
+                                                    <div class="price-box__wrap">
+                                                        <p class="end-price">20465</p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -141,7 +155,33 @@
                                     </h2>
                                     <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quos fugit rerum. Ab pariatur reprehenderit ut mollitia laboriosam officia fuga quis commodi, autem accusantium aliquam harum maiores perspiciatis cupiditate a.
+                                            <div class="form-check">
+                                                <div class="form-check__wrap">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultOne" checked>
+                                                    <label class="form-check-label" for="flexCheckDefaultOne">
+                                                        Жінкам 
+                                                    </label>
+                                                </div>
+                                                <span class="form-check__number">(64)</span>
+                                            </div>
+                                            <div class="form-check">
+                                                <div class="form-check__wrap">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultTwo" checked>
+                                                    <label class="form-check-label" for="flexCheckDefaultTwo">
+                                                        Чоловікам 
+                                                    </label>
+                                                </div>
+                                                <span class="form-check__number">(16)</span>
+                                            </div>
+                                            <div class="form-check">
+                                                <div class="form-check__wrap">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefaultThree">
+                                                    <label class="form-check-label" for="flexCheckDefaultThree">
+                                                        Унісекс 
+                                                    </label>
+                                                </div>
+                                                <span class="form-check__number">(24)</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -252,7 +292,7 @@
                                     </div>
                                     <div class="catalog-card__image-wrap">
                                         <img src="img/main/black-jacket.png" alt="black-jacket" class="catalog-card__image">
-                                        <p class="badge catalog-card__badge">Топ</p>
+                                        <p class="badge catalog-card__badge_top">Топ</p>
                                     </div>
                                     <h4 class="catalog-card__brand-name">Thom Browne</h4>
                                     <h3 class="catalog-card__name">Чорний піджак Thom Browne</h3>
@@ -470,6 +510,40 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="catalog-block__pagination-box">
+                                <ul class="pagination-list">
+                                    <li class="pagination-list__item pagination-list__item_side-button">
+                                        <a href="#" class="pagination-list__link pagination-list__link_side-button">Попередня</a>
+                                    </li>
+                                    <li class="pagination-list__item pagination-list__item_bullet">
+                                        <a href="#" class="pagination-list__link pagination-list__link_bullet">1</a>
+                                    </li>
+                                    <li class="pagination-list__item pagination-list__item_bullet pagination-list__item_bullet-active">
+                                        <a href="#" class="pagination-list__link pagination-list__link_bullet pagination-list__link_bullet-active">2</a>
+                                    </li>
+                                    <li class="pagination-list__item pagination-list__item_bullet">
+                                        <a href="#" class="pagination-list__link pagination-list__link_bullet">3</a>
+                                    </li>
+                                    <li class="pagination-list__item pagination-list__item_bullet">
+                                        <a href="#" class="pagination-list__link pagination-list__link_bullet">4</a>
+                                    </li>
+                                    <li class="pagination-list__item pagination-list__item_bullet">
+                                        <a href="#" class="pagination-list__link pagination-list__link_bullet">5</a>
+                                    </li>
+                                    <li class="pagination-list__item pagination-list__item_bullet">
+                                        <a href="#" class="pagination-list__link pagination-list__link_bullet">6</a>
+                                    </li>
+                                    <li class="pagination-list__item pagination-list__item_bullet">
+                                        <a href="#" class="pagination-list__link pagination-list__link_bullet">7</a>
+                                    </li>
+                                    <li class="pagination-list__item pagination-list__item_bullet">
+                                        <a href="#" class="pagination-list__link pagination-list__link_bullet">8</a>
+                                    </li>
+                                    <li class="pagination-list__item pagination-list__item_side-button">
+                                        <a href="#" class="pagination-list__link pagination-list__link_side-button">Наступна</a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>

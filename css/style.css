@@ -184,10 +184,13 @@ h4{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 52px;
 }
 .menu-list__link {
-    display: inline-block;
+    height: 52px;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     font-weight: 500;
     font-size: 13px;
     padding: 0 16px;
@@ -195,11 +198,14 @@ h4{
     text-transform: uppercase;
     color: #444748;
 }
+.menu-list__link_active{
+    border-bottom: 2px solid #444748;
+}
 /****************************************header syles end*****************************************************/
 /****************************************main syles start*****************************************************/
 .main-content {
     height: 100%;
-    padding: 32px 0 112px;
+    padding: 32px 0 115px;
 }
 .main-content__link-container {
     display: flex;
@@ -234,6 +240,67 @@ h4{
 .show {}
 .accordion-body {}
 .collapsed {}
+.accordion__price-range{
+    width: 100%;
+    margin-bottom: 25px;
+}
+.price-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.price-box__start-block {
+    width: 45%;
+}
+.price-box__text {
+    font-family: 'Stolzl Book';
+    font-size: 10px;
+    color: #747778;
+}
+.price-box__wrap {
+    height: 39px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid #C4C7C7;
+}
+.start-price {
+    font-size: 12px;
+    color: #2D3132;
+}
+.price-box__end-block {
+    width: 45%;
+}
+.end-price {
+    font-size: 12px;
+    color: #2D3132;
+}
+.form-check{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-check__wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.form-check-input{
+    width: 17px;
+    height: 17px;
+    margin-right: 18px;
+}
+.form-check-label{
+    font-family: 'Stolzl Book';
+}
+.form-check__number{
+    font-family: 'Stolzl Book';
+    color: #747778;
+}
 .catalog-block {
     width: calc(100% - 312px);
 }
@@ -247,7 +314,9 @@ h4{
     align-items: center;
 }
 .catalog-filter__text {}
-.catalog-filter__select {}
+.catalog-filter__select {
+    height: 34px;
+}
 .catalog-content {
     display: flex;
     flex-direction: row;
@@ -360,6 +429,58 @@ h4{
 }
 .catalog-card__company-name {
     color: #2D3132;
+}
+.catalog-block__pagination-box {
+    padding-top: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.pagination-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.pagination-list__item {
+    border: 1.6px solid #C4C7C7;
+    border-radius: 100px;
+}
+.pagination-list__item:not(:last-child) {
+    margin-right: 8px;
+}
+.pagination-list__item_side-button{
+    padding: 4px 12px;
+}
+.pagination-list__item_bullet{
+    width: 34px;
+    height: 34px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.pagination-list__item_bullet-active{
+    border-color: #2D3132;
+    transform: scale(1.178);
+}
+.pagination-list__link{
+    display: inline-block;
+    width: fit-content;
+    width: -moz-fit-content;
+    color: #5C5F60;
+}
+.pagination-list__link_side-button{
+    font-size: 12px;
+}
+.pagination-list__link_bullet{
+    font-size: 10px;
+    font-weight: 500;
+}
+.pagination-list__link_bullet-active{
+    color: #2D3132;
+    transform: scale(0.9);
 }
 /****************************************main syles end*******************************************************/
 /****************************************footer syles start***************************************************/
