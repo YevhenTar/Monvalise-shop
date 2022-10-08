@@ -197,6 +197,7 @@ h4{
     letter-spacing: 0.4px;
     text-transform: uppercase;
     color: #444748;
+    border-bottom: 2px solid transparent;
 }
 .menu-list__link_active{
     border-bottom: 2px solid #444748;
@@ -207,14 +208,22 @@ h4{
     height: 100%;
     padding: 32px 0 115px;
 }
-.main-content__link-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+.breadcrumb{
+    --bs--breadcrumb-font-size: 12px;
+    --bs-breadcrumb-divider-color: #A9ACAC;
+    --bs-breadcrumb-item-active-color: #747778;
+    --bs-breadcrumb-item-padding-x: 8px;
+
 }
-.main-content__link {}
-.main-content__headline {}
+.breadcrumb-item.active{
+    font-family: 'Stolzl Book';
+}
+.main-content__headline {
+    font-weight: 400;
+    line-height: 1.5;
+    color: #2D3132;
+    margin-bottom: 32px;
+}
 .main-content__wrap{
     display: flex;
     flex-direction: row;
