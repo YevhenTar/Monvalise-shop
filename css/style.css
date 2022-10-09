@@ -154,9 +154,9 @@ h4{
     align-items: center;
     position: absolute;
     top: -7px;
-    right: 5px;
-    width: 16px;
-    height: 16px;
+    left: 12px;
+    width: 17px;
+    height: 17px;
     border: 2.4px solid white;
     border-radius: 13px;
     background-color: #EFF1F1;
@@ -269,7 +269,6 @@ h4{
 .accordion-header {
     font-family: 'Stolzl Book';
     font-weight: 400;
- 
     line-height: 1.5;
     color: #444748;
 }
@@ -355,9 +354,54 @@ h4{
     justify-content: flex-end;
     align-items: center;
 }
-.catalog-filter__text {}
+.catalog-filter__text {
+    font-size: 12px;
+    color: #5C5F60;
+    margin-right: 12px;
+}
 .catalog-filter__select {
+    appearance: none;
+    outline: 0;
+    border: 0;
+    flex: 1;
+    padding: 8px 36px 8px 12px;
+    font-size: 12px;
+    color: #2D3132;
+    background-color: #EFF1F1;
+    background-image: none;
+    cursor: pointer;
+}
+.catalog-filter__select::-ms-expand {
+    display: none;
+}
+.catalog-filter__select option{
+    padding: 8px 12px;
+    outline: 0;
+    border: 0;
+    border-radius: 100px;
+    background-color: #EFF1F1;
+}
+.catalog-filter__select-wrap{
+    position: relative;
+    display: flex;
+    width: 170px;
     height: 34px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+.catalog-filter__select-wrap::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #EFF1F1;
+    pointer-events: none;
+    height: 34px;
+    width: 30px;
+    border-left: 1px solid white;
+    background-image: url(../img/main/catalog-filter-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .catalog-content {
     display: flex;
