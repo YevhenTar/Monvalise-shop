@@ -111,19 +111,23 @@
                                     </h3>
                                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            <input class="accordion__price-range" type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+                                            <input class="form-range slider-progress accordion__price-range" type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
                                             <div class="price-box">
                                                 <div class="price-box__start-block">
-                                                    <p class="price-box__text">Від</p>
+                                                    <label for="start-price" class="price-box__label">Від</label>
+                                                    <input type="text" class="price-box__input" value="980" id="start-price">
+                                                    <!-- <p class="price-box__text">Від</p>
                                                     <div class="price-box__wrap">
                                                         <p class="start-price">980</p>
-                                                    </div>
+                                                    </div> -->
                                                 </div>
                                                 <div class="price-box__end-block">
-                                                    <p class="price-box__text">До</p>
+                                                    <label for="end-price" class="price-box__label">До</label>
+                                                    <input type="text" class="price-box__input" value="20465" id="end-price">
+                                                    <!-- <p class="price-box__text">До</p>
                                                     <div class="price-box__wrap">
                                                         <p class="end-price">20465</p>
-                                                    </div>
+                                                    </div> -->
                                                 </div>
                                             </div>
                                         </div>
