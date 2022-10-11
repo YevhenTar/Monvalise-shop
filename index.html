@@ -27,7 +27,6 @@
                         <div class="header-box">
                             <input type="text" class="header-box__input" placeholder="Знайти речі або бренди">
                             <button type="button" class="btn btn-dark header-box__button">Додати товар</button>
-                            <!-- <a href="#" class="button header-box__button">Додати товар</a> -->
                             <div class="header-box__language-select-wrap">
                                 <select name="" id="" class="header-box__language-select">
                                     <option value="">Укр</option>
@@ -516,7 +515,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="catalog-block__pagination-box">
+                            <!-- <nav class="catalog-block__pagination-box">
                                 <ul class="pagination-list">
                                     <li class="pagination-list__item">
                                         <a href="#" class="pagination-list__link pagination-list__link_side-button">Попередня</a>
@@ -549,7 +548,21 @@
                                         <a href="#" class="pagination-list__link pagination-list__link_side-button">Наступна</a>
                                     </li>
                                 </ul>
-                            </div>
+                            </nav> -->
+                            <nav aria-label="Catalog navigation" class="catalog-block__pagination-box">
+                                <ul class="pagination-list pagination justify-content-center align-items-center">
+                                    <li class="pagination-list__item page-item"><a class="pagination-list__link page-link" href="#">Попередня</a></li>
+                                    <li class="pagination-list__item page-item"><a class="pagination-list__link page-link" href="#">1</a></li>
+                                    <li class="pagination-list__item page-item active" aria-current="page"><a class="pagination-list__link page-link" href="#">2</a></li>
+                                    <li class="pagination-list__item page-item"><a class="pagination-list__link page-link" href="#">3</a></li>
+                                    <li class="pagination-list__item page-item"><a class="pagination-list__link page-link" href="#">4</a></li>
+                                    <li class="pagination-list__item page-item"><a class="pagination-list__link page-link" href="#">5</a></li>
+                                    <li class="pagination-list__item page-item"><a class="pagination-list__link page-link" href="#">6</a></li>
+                                    <li class="pagination-list__item page-item"><a class="pagination-list__link page-link" href="#">7</a></li>
+                                    <li class="pagination-list__item page-item"><a class="pagination-list__link page-link" href="#">8</a></li>
+                                    <li class="pagination-list__item page-item"><a class="pagination-list__link page-link" href="#">Наступна</a></li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
                 </div>
