@@ -145,6 +145,8 @@ h4{
     color: #2D3132;
     appearance: none;
     cursor: pointer;
+    padding-right: 15px;
+    text-align: center;
 }
 .header-box__language-select-wrap::after{
     content: url("../img/header/language-select-arrow.svg");
@@ -187,8 +189,19 @@ h4{
 .alert-block:not(:last-child)> .alert-block__image{
     margin-right: 24px;
 }
+.user-menu__button{
+    border: none;
+    outline: none;
+    padding: 0;
+}
+.user-menu__button.dropdown-toggle::after {
+    display: none;
+}
 .user-menu__image{
-    margin-right: 8px;
+    margin-right: 4px;
+}
+.user-menu .dropdown-item{
+    font-size: 14px;
 }
 .menu-list {
     display: flex;

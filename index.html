@@ -30,6 +30,7 @@
                             <div class="header-box__language-select-wrap">
                                 <select name="" id="" class="header-box__language-select">
                                     <option value="">Укр</option>
+                                    <option value="">Англ</option>
                                 </select>
                             </div>
                             <div class="header-box__alerts-block">
@@ -46,11 +47,18 @@
                                     <p class="alert-block__counter">3</p>
                                 </div>
                             </div>
-                            <div class="user-menu">
-                                <a href="#" class="user-menu__button">
+                            <div class="dropdown user-menu">
+                                <a class="user-menu__button btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,15">
                                     <img src="img/header/user-photo.png" alt="user-photo" class="user-menu__image">
                                     <img src="img/header/arrow-down.svg" alt="arrow-down" class="arrow-down">
                                 </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Профіль</a></li>
+                                    <li><a class="dropdown-item" href="#">Обране</a></li>
+                                    <li><a class="dropdown-item" href="#">Повідомлення</a></li>
+                                    <li><a class="dropdown-item" href="#">Кошик</a></li>
+                                    <li><a class="dropdown-item" href="#">Налаштування</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -515,40 +523,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- <nav class="catalog-block__pagination-box">
-                                <ul class="pagination-list">
-                                    <li class="pagination-list__item">
-                                        <a href="#" class="pagination-list__link pagination-list__link_side-button">Попередня</a>
-                                    </li>
-                                    <li class="pagination-list__item ">
-                                        <a href="#" class="pagination-list__link pagination-list__link_bullet">1</a>
-                                    </li>
-                                    <li class="pagination-list__item">
-                                        <a href="#" class="pagination-list__link pagination-list__link_bullet pagination-list__link_bullet-active">2</a>
-                                    </li>
-                                    <li class="pagination-list__item">
-                                        <a href="#" class="pagination-list__link pagination-list__link_bullet">3</a>
-                                    </li>
-                                    <li class="pagination-list__item">
-                                        <a href="#" class="pagination-list__link pagination-list__link_bullet">4</a>
-                                    </li>
-                                    <li class="pagination-list__item">
-                                        <a href="#" class="pagination-list__link pagination-list__link_bullet">5</a>
-                                    </li>
-                                    <li class="pagination-list__item">
-                                        <a href="#" class="pagination-list__link pagination-list__link_bullet">6</a>
-                                    </li>
-                                    <li class="pagination-list__item">
-                                        <a href="#" class="pagination-list__link pagination-list__link_bullet">7</a>
-                                    </li>
-                                    <li class="pagination-list__item">
-                                        <a href="#" class="pagination-list__link pagination-list__link_bullet">8</a>
-                                    </li>
-                                    <li class="pagination-list__item">
-                                        <a href="#" class="pagination-list__link pagination-list__link_side-button">Наступна</a>
-                                    </li>
-                                </ul>
-                            </nav> -->
                             <nav aria-label="Catalog navigation" class="catalog-block__pagination-box">
                                 <ul class="pagination-list pagination justify-content-center align-items-center">
                                     <li class="pagination-list__item page-item"><a class="pagination-list__link page-link" href="#">Попередня</a></li>
