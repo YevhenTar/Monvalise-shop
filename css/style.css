@@ -115,19 +115,19 @@ h4{
     color: #5C5F60;
 }
 .header-box__button {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    --bs-btn-border-radius-custom: 4px;
+    --bs-btn-bg-custom: #2D3132;
+    --bs-btn-border-color-custom: #2D3132;
     width: fit-content;
     width: -moz-fit-content;
     height: 38px;
     padding: 0 20px;
     margin-right: 24px;
-    background-color: #2D3132;
-    border-radius: 4px;
+    font-family: 'Stolzl';
     font-size: 12px;
-    color: #fff;
+    border: var(--bs-btn-border-width) solid var(--bs-btn-border-color-custom);
+    border-radius: var(--bs-btn-border-radius-custom);
+    background-color: var(--bs-btn-bg-custom);
 }
 .header-box__language-select-wrap{
     position: relative;
