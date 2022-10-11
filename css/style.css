@@ -300,6 +300,13 @@ h4{
 .accordion-collapse {
     background-color: #fff;
 }
+.accordion-body__text{
+    font-family: 'Stolzl Book';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #444748;
+}
 .accordion__price-range{
     margin-bottom: 25px;
 }
@@ -317,18 +324,48 @@ h4{
     -webkit-appearance: none;
     margin-top: -6px;
 }
-/* input[type=range]::-moz-range-track {
-    border-radius: 10px/100%;
-    height: 5px;
-    border: 1px solid cyan;
-    background-color: #fff;
+.form-range::-webkit-slider-thumb:active{
+    background-color: #5C5F60;
+    box-shadow: none;
 }
-input[type=range]::-moz-range-thumb {
-    background: #ecf0f1;
-    border: 1px solid cyan;
-    border-radius: 10px/100%;
+.form-range::-webkit-slider-thumb:not(:active){
+    background-color: #5C5F60;
+    box-shadow: none;
+}
+
+.form-range::-moz-range-track {
+    height: 4px;
+    border: none;
+    background-color: #C4C7C7;
+}
+.form-range::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background-color: #5C5F60;
+    border-radius: 4px;
     cursor: pointer;
-} */
+    -webkit-appearance: none;
+    margin-top: -6px;
+} 
+.form-range::-moz-range-thumb:active{
+    background-color: #5C5F60;
+    box-shadow: none;
+}
+.form-range::-moz-range-thumb:not(:active){
+    background-color: #5C5F60;
+    box-shadow: none;
+}
+.form-range.slider-progress {
+    --range: calc(var(--max) - var(--min));
+    --ratio: calc((var(--value) - var(--min)) / var(--range));
+    --sx: calc(0.5 * 2em + var(--ratio) * (100% - 2em));
+}
+.form-range.slider-progress::-webkit-slider-runnable-track {
+    background: linear-gradient(#8E9192,#8E9192) 0/var(--sx) 100% no-repeat, #C4C7C7;
+}
+.form-range.slider-progress::-moz-range-track {
+    background: linear-gradient(#8E9192,#8E9192) 0/var(--sx) 100% no-repeat, #C4C7C7;
+}
 .price-box {
     display: flex;
     flex-direction: row;
@@ -376,7 +413,22 @@ input[type=range]::-moz-range-thumb {
 .form-check-input{
     width: 17px;
     height: 17px;
-    margin-right: 18px;
+    border-color: #C4C7C7;
+    background-color: #fff; 
+    margin-top: 0;
+    margin-right: 16px;
+    box-shadow: none;
+}
+.form-check-input:checked {
+    background-color: #2D3132;
+    border-color: #2D3132;
+}
+.form-check-input:not(:checked) {
+    border-color: #C4C7C7;
+    background-color: #fff; 
+}
+.form-check-input:focus {
+    box-shadow: none;
 }
 .form-check-label{
     font-family: 'Stolzl Book';
@@ -521,8 +573,7 @@ input[type=range]::-moz-range-thumb {
     align-items: center;
 }
 .catalog-card__old-price {
-    font-size: 12px;
-    text-decoration-line: line-through;
+    font-size: 12px;  
     color: #747778;
 }
 .catalog-card__current-price {
