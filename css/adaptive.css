@@ -145,7 +145,47 @@
 }
 
 /* Small devices (landscape phones, less than 768px)    */
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+    .logo-block__image{
+        width: 100px;
+    }
+    .header-box__input {
+        margin-right: 40px;
+    }
+    .header-box__button {
+        display: none;
+    }
+    .header-box__language-select-wrap {
+        display: none;
+    }
+    .main-content__filter-block{
+        display: none;
+    }
+    .catalog-block {
+        width: 100%;
+    }
+    .catalog-content {
+        align-items: center;
+    }
+    .catalog-card {
+        min-width: 370px;
+    }
+    .main-footer__wrap {
+        justify-content: space-between;
+    }
+    .footer-block {
+        width: 45%;
+    }
+    .footer-block:nth-child(3) {
+        width: 45%;
+    }
+    .footer-block:nth-child(4) {
+        width: 45%;
+    }
+    .dropdown-item_disappear{
+        display: inline-block;
+    }
+}
 
 /* X-Small devices (portrait phones, less than 576px)    */
 @media (max-width: 575.98px) {}
