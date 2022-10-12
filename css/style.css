@@ -89,6 +89,12 @@ button, input, optgroup, select, textarea {
     justify-content: flex-end;
     align-items: center;
 }
+.header-box__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
 .header-box__input {
     min-width: 639px;
     height: 40px;
@@ -224,7 +230,7 @@ button, input, optgroup, select, textarea {
     margin-bottom: 40px;
 }
 .breadcrumb{
-    --bs--breadcrumb-font-size: 12px;
+    --bs-breadcrumb-font-size: 12px;
     --bs-breadcrumb-divider-color: #A9ACAC;
     --bs-breadcrumb-item-active-color: #747778;
     --bs-breadcrumb-margin-bottom: 0;
