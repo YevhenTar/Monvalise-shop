@@ -197,12 +197,6 @@ button, input, optgroup, select, textarea {
     justify-content: flex-start;
     align-items: center;
 }
-.menu-list__item {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
 .menu-list__link {
     height: 52px;
     display: inline-flex;
