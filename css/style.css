@@ -227,10 +227,14 @@ button, input, optgroup, select, textarea {
     height: 100%;
     padding: 32px 0 115px;
 }
+.main-content__breadcrumb{
+    margin-bottom: 40px;
+}
 .breadcrumb{
     --bs--breadcrumb-font-size: 12px;
     --bs-breadcrumb-divider-color: #A9ACAC;
     --bs-breadcrumb-item-active-color: #747778;
+    --bs-breadcrumb-margin-bottom: 0;
 }
 .breadcrumb-item.active{
     font-family: 'Stolzl Book';
@@ -238,7 +242,6 @@ button, input, optgroup, select, textarea {
 .main-content__headline {
     font-weight: 400;
     line-height: 1.5;
-    color: #2D3132;
     margin-bottom: 32px;
 }
 .main-content__wrap{
@@ -291,9 +294,6 @@ button, input, optgroup, select, textarea {
 }
 .accordion-body__text{
     font-family: 'Stolzl Book';
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.5;
     color: #444748;
 }
 .accordion__price-range{
@@ -380,8 +380,6 @@ button, input, optgroup, select, textarea {
     align-items: center;
     border: none;
     border-bottom: 1px solid #C4C7C7;
-    font-size: 12px;
-    color: #2D3132;
     width: 100%;
 }
 .price-box__end-block {
@@ -457,13 +455,6 @@ button, input, optgroup, select, textarea {
 }
 .catalog-filter__select::-ms-expand {
     display: none;
-}
-.catalog-filter__select option{
-    padding: 8px 12px;
-    outline: 0;
-    border: 0;
-    border-radius: 100px;
-    background-color: #EFF1F1;
 }
 .catalog-filter__select-wrap{
     position: relative;
@@ -552,7 +543,6 @@ button, input, optgroup, select, textarea {
 .catalog-card__name {
     font-weight: 400;
     line-height: 1.5;
-    color: #2D3132;
     margin-bottom: 24px;
 }
 .catalog-card__wrap {
@@ -567,7 +557,6 @@ button, input, optgroup, select, textarea {
 }
 .catalog-card__current-price {
     font-weight: 500;
-    color: #2D3132;
 }
 .catalog-card__location-block {
     display: flex;
@@ -582,7 +571,6 @@ button, input, optgroup, select, textarea {
 .catalog-card__location-city {
     font-family: 'Stolzl Book';
     font-size: 12px;
-    color: #2D3132;
 }
 .catalog-card__company-block {
     display: flex;
@@ -592,9 +580,6 @@ button, input, optgroup, select, textarea {
 }
 .catalog-card__company-logo {
     margin-right: 8px;
-}
-.catalog-card__company-name {
-    color: #2D3132;
 }
 .catalog-block__pagination-box {
     padding-top: 35px;
@@ -616,23 +601,22 @@ button, input, optgroup, select, textarea {
     justify-content: center;
     align-items: center;
 }
-.page-item:first-child .page-link{
+.pagination-list__link_side-button{
     width: fit-content;
     width: -moz-fit-content;
     font-size: 12px;
     font-weight: 400;
     padding: 4px 12px;
     height: auto;
+}
+.pagination-list__link:focus{
+    box-shadow: none;
+}
+.page-item:first-child .page-link{
     border-top-left-radius: 100px;
     border-bottom-left-radius: 100px;
 }
 .page-item:last-child .page-link{
-    width: fit-content;
-    width: -moz-fit-content;
-    font-size: 12px;
-    font-weight: 400;
-    padding: 4px 12px;
-    height: auto;
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
 }
