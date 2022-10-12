@@ -15,19 +15,7 @@ body {
     font-weight: normal;
     font-size: 14px;
     line-height: 1.5;
-    color: #444748;
-}
-section {
-    position: relative;
-    overflow: visible;
-}
-ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin: 0;
-}
-a {
-    text-decoration: none;
+    /* color: #444748; */
     color: #2D3132;
 }
 p,
@@ -50,11 +38,18 @@ h3{
 h4{
     font-size: 10px;
 }
-.main-content {
-    overflow: hidden;
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
 }
-.body-blocked{
-    overflow: hidden;
+a {
+    text-decoration: none;
+    color: #2D3132;
+}
+button, input, optgroup, select, textarea {
+    font-size: 12px;
+    color: #2D3132;
 }
 /****************************************Start styles end***************************************************/
 /****************************************header syles start***************************************************/
@@ -102,17 +97,14 @@ h4{
     border-radius: 4px;
     padding: 0 40px 0 52px;
     margin-right: 24px;
+    color: #5C5F60;
     outline: none;
     background-image: url("../img/header/magnifying-glass-icon.svg");
     background-repeat: no-repeat;
     background-position: 18px center;
 }
-.header-box__input::-webkit-input-placeholder,
-.header-box__input::-moz-placeholder,
 .header-box__input::placeholder {
     font-family: "Stolzl Book";
-    font-size: 12px;
-    color: #5C5F60;
 }
 .header-box__button {
     --bs-btn-border-radius-custom: 4px;
@@ -141,8 +133,6 @@ h4{
     border: none;
     outline: none;
     flex: 1;
-    font-size: 12px;
-    color: #2D3132;
     appearance: none;
     cursor: pointer;
     padding-right: 15px;
@@ -177,7 +167,6 @@ h4{
     border-radius: 13px;
     background-color: #EFF1F1;
     font-size: 10px;
-    color: #2D3132;
 }
 .alert-block__counter_new{
     background-color: #FF5449;
@@ -226,11 +215,11 @@ h4{
     padding: 0 16px;
     letter-spacing: 0.4px;
     text-transform: uppercase;
-    color: #444748;
     border-bottom: 2px solid transparent;
 }
 .menu-list__link_active{
     border-bottom: 2px solid #444748;
+    color: #444748;
 }
 /****************************************header syles end*****************************************************/
 /****************************************main syles start*****************************************************/
