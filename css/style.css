@@ -3,9 +3,9 @@ html {
     height: 100vh;
     box-sizing: border-box;
 }
-  *,
-  *::before,
-  *::after {
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
 body {
@@ -322,7 +322,6 @@ button, input, optgroup, select, textarea {
     background-color: #5C5F60;
     box-shadow: none;
 }
-
 .form-range::-moz-range-track {
     height: 4px;
     border: none;

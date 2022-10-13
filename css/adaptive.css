@@ -25,7 +25,6 @@
         width: 20%;
     }
 }
-
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
     .commercial-block__text {
@@ -71,7 +70,6 @@
         padding-bottom: 60px;
     }
 }
-
 /* Medium devices (tablets, less than 992px)    */
 @media (max-width: 991.98px) {
     .commercial-block {
@@ -143,7 +141,6 @@
         padding: 26px 0 0px;
     }
 }
-
 /* Small devices (landscape phones, less than 768px)    */
 @media (max-width: 767.98px) {
     h1 {
@@ -189,7 +186,6 @@
         display: inline-block;
     }
 }
-
 /* X-Small devices (portrait phones, less than 576px)    */
 @media (max-width: 575.98px) {
     .commercial-block__text {
