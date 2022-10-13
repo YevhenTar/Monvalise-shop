@@ -142,6 +142,7 @@ button, input, optgroup, select, textarea {
     cursor: pointer;
     padding-right: 15px;
     text-align: center;
+    background-color: #fff;
 }
 .header-box__language-select-wrap::after{
     content: url("../img/header/language-select-arrow.svg");
